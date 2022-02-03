@@ -1,0 +1,43 @@
+@keyframes fade_infinite {
+    0% {
+      color: black;
+    }
+    50% {
+        color:white;
+    }
+    100% {
+        color:black;
+    }
+}
+
+html { overflow-y: hidden; }
+
+body {
+    background-color:black;
+}
+
+.center-large {
+    color:white;
+    font-size:5vh;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.center-small {
+    color:white;
+    font-size:2.5vh;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.height_center {
+    margin-top:45vh;
+    text-align: center;
+}
+
+
+#fading_text {
+    animation-duration: 2.5s;
+    animation-name: fade_infinite;
+    animation-iteration-count: infinite;
+
+    color: black;
+}

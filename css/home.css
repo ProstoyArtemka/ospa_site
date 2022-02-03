@@ -1,0 +1,80 @@
+@keyframes start {
+    from {
+        margin-top: 45vh;
+    }
+
+    to {
+        margin-top: 2vh;
+    }
+}
+
+@keyframes show {
+    0% {
+        color: black;
+        visibility: hidden;
+    }
+
+    100% {
+        color:white;
+        visibility: visible;
+    }
+}
+
+html { overflow-y: hidden; }
+
+body {
+    background-color: black;
+}
+
+.hello {
+    margin-top: 45vh;
+
+    color:white;
+
+    font-size:2.5vw;
+    font-family: 'Montserrat Alternates', sans-serif;
+
+    animation-name: start;
+    animation-duration: 2s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+.text {
+    margin-top: 8vh;
+
+    font-size:3vh;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+a {
+    color:black;
+    animation-name: show;
+    animation-duration: 1.5s;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+}
+
+.closed {
+    color:black;
+
+    visibility: hidden;
+
+    animation-name: show;
+    animation-duration: 1.5s;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+}
+
+.ospa_image {
+    margin-top: 10vh;
+    cursor: pointer;
+    width: 15vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-width: .1vw;
+    border-color: white;
+    border-style: solid;
+}
