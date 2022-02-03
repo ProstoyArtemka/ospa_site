@@ -41,8 +41,7 @@ function ospa_go() {
 }
 
 function goToNext() {
-    window.open("home.html");
-    window.close();
+    window.replace("home.html");
 }
 
 setInterval(loadingAnimate, 1000);
